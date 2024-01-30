@@ -1,225 +1,564 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Niraina</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+
+	<!--- basic page needs
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>NIRAINA</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vendor.css">
+
+	<!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+	<!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="fav.ico">
+
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">@nay</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">À propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#service">Services</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<body id="top">
 
-    <section class="section-hero" id="home">
-        <div class="container-hero">
-            <div class="content animate__animated animate__fadeInDown">
-                <p>Bonjour, je suis</p>
-                <h1>Niraina ANDRIAMIARINTSOA</h1>
-                <h2>Développeur web</h2>
-            </div>
-        </div>
-    </section>
+	<!-- header 
+   ================================================== -->
+	<header>
+		<div class="row">
 
-    <section class="section-about" id="about">
-        <div class="container">
-            <div class="mb-5 title-section">
-                <h3>À propos de moi :</h3>
-            </div>
-            <div class="row animate__animated animate__fadeIn">
-                <div class="col-md-4 mb-2">
-                    <img src="./assets/img/me.jpg" class="img-fluid picture-profile" alt="niraina">
-                </div>
-                <div class="col-md-8">
-                    <div class="content-about">
-                        <p>Développeur front end innovant et proactive, capable de développer des sites web et des
-                            applications aux concepts élégants et novateurs pour des clients exigeants.</p>
-                        <p>Polyvalent et hautement organisée avec une expertise dans la planification de projets,
-                            l'amélioration des concepts et la vérification de la programmation.</p>
-                    </div>
-                    <div class="content-skills">
-                        <h3>Compétences</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 animate__animated animate__fadeInLeft">
-                            <div class="content">
-                                <i class="fa-brands fa-html5"></i>
-                                <div class="desc">
-                                    <h3>HTML</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 animate__animated animate__fadeInLeft animate__delay-1s">
-                            <div class="content">
-                                <i class="fa-brands fa-css3-alt"></i>
-                                <div class="desc">
-                                    <h3>CSS</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 animate__animated animate__fadeInLeft animate__delay-2s">
-                            <div class="content">
-                                <i class="fa-brands fa-js"></i>
-                                <div class="desc">
-                                    <h3>Javascript</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 animate__animated animate__fadeInLeft animate__delay-3s">
-                            <div class="content">
-                                <i class="fa-brands fa-bootstrap"></i>
-                                <div class="desc">
-                                    <h3>Bootstrap</h3>
-                                </div>
-                            </div>
-                        </div>
+			<div class="top-bar">
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-                        <div class="col-md-3 animate__animated animate__fadeInLeft">
-                            <div class="content">
-                                <i class="fa-brands fa-react"></i>
-                                <div class="desc">
-                                    <h3>React js</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 animate__animated animate__fadeInLeft animate__delay-1s">
-                            <div class="content">
-                                <i class="fa-brands fa-wordpress"></i>
-                                <div class="desc">
-                                    <h3>WordPress</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 animate__animated animate__fadeInLeft animate__delay-2s">
-                            <div class="content">
-                                <i class="fa-brands fa-php"></i>
-                                <div class="desc">
-                                    <h3>PHP</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 animate__animated animate__fadeInLeft animate__delay-3s">
-                            <div class="content">
-                                <i class="fa-brands fa-node-js"></i>
-                                <div class="desc">
-                                    <h3>Node js</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				<div class="logo">
+					<a href="index.html">NIRAINA</a>
+				</div>
 
-    <section class="section-service" id="service">
-        <div class="container animate__animated animate__fadeInLeft">
-            <div class="mb-5 title-section">
-                <h3>Services</h3>
-            </div>
-            <div class="row">
-                <div class="col-md-3 animate__animated animate__fadeInLeft animate__delay-1s">
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            <p>Intégration</p>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Création du template (React js, wordpress, html)</h5>
-                            <p class="card-text">Découpage sur HTML/Css suivant la maquette au millimètre près</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 animate__animated animate__fadeInLeft animate__delay-2s">
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            <p>Dynamisation wordpress</p>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Dynamisation de tout les contenus de wordpress</h5>
-                            <p class="card-text">Titre, menu, logo, image, article, bloc de section, personnalisation du backoffice ...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 animate__animated animate__fadeInLeft animate__delay-3s">
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            <p>E-commerce</p>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Mise en place de woocommerce sur wordpress</h5>
-                            <p class="card-text">Produit simple & variant, gestion des stoques, système de paiement, envoie mail</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 animate__animated animate__fadeInLeft animate__delay-4s">
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            <p>Développement React js</p>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Intégration et dynamisation des divers fonctionnalitée</h5>
-                            <p class="card-text">Session, Routes, filtre, pagination, upload/download...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll" href="#intro" title="">Accueil</a></li>
+						<li><a class="smoothscroll" href="#about" title="">À propos</a></li>
+						<li><a class="smoothscroll" href="#resume" title="">Résumer</a></li>
+						<li><a class="smoothscroll" href="#services" title="">Services</a></li>
+						<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+					</ul>
+				</nav>
+			</div> <!-- /top-bar -->
 
-    <footer>
-        <div class="container animate__animated animate__fadeInLeft">
-            <div class="row">
-                <div class="col-md-4 d-flex align-items-center">
-                    <p>Copyright @2023</p>
-                </div>
-                <div class="col-md-8">
-                    <div class="content-contact animate__animated animate__fadeInLeft animate__delay-1s">
-                        <i class="fa-sharp fa-solid fa-envelope"></i>
-                        <a href="mailto:andriamiarintsoaniraina@gmail.com">andriamiarintsoaniraina@gmail.com</a>
-                    </div>
-                    <div class="content-contact animate__animated animate__fadeInLeft animate__delay-2s">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <a href="https://mg.linkedin.com/in/niraina-andriamiarintsoa-34a267213">Niraina Andriamiarintsoa</a>
-                    </div>
-                    <div class="content-contact animate__animated animate__fadeInLeft animate__delay-3s">
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+261 34 44 085 07">+261 34 44 085 07</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+		</div> <!-- /row -->
+	</header> <!-- /header -->
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<!-- intro section
+   ================================================== -->
+	<section id="intro">
+
+		<div class="intro-overlay"></div>
+
+		<div class="intro-content">
+			<div class="row">
+
+				<div class="col-twelve">
+
+					<h5>Bonjour,</h5>
+					<h1>Je suis Niraina.</h1>
+
+					<p class="intro-position">
+						<span>Développeur Frontend</span>
+						<span>Intégrateur WEB</span>
+					</p>
+
+					<a class="button stroke smoothscroll" href="#about" title="">À propos de moi</a>
+
+				</div>
+
+			</div>
+		</div> <!-- /intro-content -->
+
+		<ul class="intro-social">
+			<li><a href="https://www.facebook.com/ntsoa.nyraina/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://github.com/niraina" target="_blank"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://mg.linkedin.com/in/niraina-andriamiarintsoa-34a267213" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="mailto: andriamiarintsoaniraina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+		</ul> <!-- /intro-social -->
+
+	</section> <!-- /intro -->
+
+
+	<!-- about section
+   ================================================== -->
+	<section id="about">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>À prpopos</h5>
+				<h1>Laisse moi me présenter.</h1>
+
+				<div class="intro-info">
+
+					<img src="images/profile-pic.jpg" alt="Profile Picture" style="object-fit: cover;">
+
+					<p class="lead">
+						En tant que professionnel du domaine du développement web, j'ai débuté ma carrière en tant
+						qu'intégrateur web en 2021, maîtrisant les langages tels que HTML, CSS, jQuery et WordPress. En
+						2023, j'ai évolué vers le rôle de développeur frontend en utilisant la bibliothèque React.js et
+						TypeScript. Depuis lors, je m'épanouis en tant que développeur frontend et intégrateur web,
+						combinant mes compétences pour créer des expériences web innovantes et esthétiques.
+					</p>
+				</div>
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row about-content">
+
+			<div class="col-six tab-full">
+
+				<h3>Profile</h3>
+				<p>Développeur frontend expérimenté, innovant et proactif, capable de concevoir des sites web et des
+					applications aux concepts élégants et novateurs pour des clients exigeants.</p>
+
+				<ul class="info-list">
+					<li>
+						<strong>Nom et prénom:</strong>
+						<span>Andriamaiarintsoa Niraina</span>
+					</li>
+					<li>
+						<strong>Née le:</strong>
+						<span>02 Janvier 1995</span>
+					</li>
+					<li>
+						<strong>Métier:</strong>
+						<span>Développeur Frontend & Intégrateur WEB</span>
+					</li>
+					<li>
+						<strong>Email:</strong>
+						<span>andriamiarintsoaniraina@gmail.com</span>
+					</li>
+					<li>
+						<strong>Téléphone:</strong>
+						<span>+261 34 44 085 07</span>
+					</li>
+
+				</ul> <!-- /info-list -->
+
+			</div>
+
+			<div class="col-six tab-full">
+
+				<h3>Compétences</h3>
+				<!-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
+
+				<ul class="info-list">
+					<li>
+						<strong>LANGAGE DE PROGRAMMATION</strong>
+						<span>Javascript, Typescript, PHP<span>
+					</li>
+					<li>
+						<strong>FRONTEND<strong>
+								<span>HTML/CSS, Tailwind, Bootstrap, sass…</span>
+					</li>
+					<li>
+						<strong>FRAMEWORKS & LIBRAIRIES</strong>
+						<span>React Js, Next Js, Vue Js, Express Js, jQuery</span>
+					</li>
+					<li>
+						<strong>CMS</strong>
+						<span>WordPress</span>
+					</li>
+					<li>
+						<strong>BASE DE DONNÉES</strong>
+						<span>MySQL, MongoDB</span>
+					</li>
+					<li>
+						<strong>DESIGN</strong>
+						<span>Figma, Adobe XD, Adobe Photoshop</span>
+					</li>
+					<li>
+						<strong>SYSTEME DE GESTION DE VERSION</strong>
+						<span>Git</span>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+		<div class="row button-section">
+			<div class="col-twelve">
+				<a href="mailto: andriamiarintsoaniraina@gmail.com" title="Contactez moi" class="button stroke smoothscroll">Contactez moi</a>
+				<a href="./images/niraina_andriamiarintsoa_2024.pdf" title="Télécharger mon CV"
+					class="button button-primary" download="">Mon CV</a>
+			</div>
+		</div>
+
+	</section> <!-- /process-->
+
+
+	<!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row resume-timeline">
+
+			<div class="col-twelve resume-header">
+
+				<h2>EXPÉRIENCE PROFESSIONNELLE</h2>
+
+			</div> <!-- /resume-header -->
+
+			<div class="col-twelve">
+
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Développeur Frontend</h3>
+							<p>LIVENEXX | 2023 à ce jour</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Dynamisation & intégration API Rest sur React js (ERP, Site vitrine, Ecommerce)</h4>
+							<p>Téchnologie: React Js, Javascript, Typescript, Antd, Tailwind, Sass...</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Intégrateur WEB</h3>
+							<p>LIVENEXX | 2021 à ce jour</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Intégration HTML sur mesure suivant la maquette + Intégration et dynamisation sur
+								Wordpress(Blog, site vitrine, ecommerce ...</h4>
+							<p>
+								<strong>Téchnologie:</strong> PHP, Javascript, HTML, CSS, Sass, Bootstrap, jQuery ...
+								<br />
+								<strong>Base de données:</strong> MySQL
+							</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>FREELANCE</h3>
+							<p>2022 à ce jour</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Dynamisation et intégration utilisant du React Js ou du CMS WordPress (Blog, Site
+								vitrine, ecommerce...) </h4>
+							<p>
+								Téchnologie: PHP, Javascript, Typescript, HTML, CSS, Sass, Tailwind,Bootstrap, jQuery,
+								slick...
+								<br />
+								Base de données: MySQL, MongoDB
+							</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+				</div> <!-- /timeline-wrap -->
+
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /resume-timeline -->
+
+		<div class="row resume-timeline">
+
+			<div class="col-twelve resume-header">
+
+				<h2>FORMATIONS</h2>
+
+			</div> <!-- /resume-header -->
+
+			<div class="col-twelve">
+
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+ 
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+ 
+						<div class="timeline-header">
+							<h3>SoTalent</h3>
+							<p>2023 - Antananarivo</p>
+						</div>
+ 
+						<div class="timeline-content">
+							<h4>Certification de formation (Vue.js et Python)</h4>
+							<p><br/></p>
+						</div>
+ 
+					</div> <!-- /timeline-block -->
+ 
+					<div class="timeline-block">
+ 
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+ 
+						<div class="timeline-header">
+							<h3>Ecole Nationale d'Informatique</h3>
+							<p>2021 - Fianarantsoa</p>
+						</div>
+ 
+						<div class="timeline-content">
+							<h4>Master professionnelle en informatique</h4>
+							<p><br/></p>
+						</div>
+ 
+					</div> <!-- /timeline-block -->
+ 
+					<div class="timeline-block">
+ 
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+ 
+						<div class="timeline-header">
+							<h3>Ecole Nationale d'Informatique</h3>
+							<p>2019 - Fianarantsoa</p>
+						</div>
+ 
+						<div class="timeline-content">
+							<h4>License professionnelle en informatique</h4>
+							<p></p>
+						</div>
+ 
+					</div> <!-- /timeline-block -->
+ 
+				</div> <!-- /timeline-wrap -->
+
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /resume-timeline -->
+
+	</section> <!-- /features -->
+
+
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Services</h5>
+				<h1>Que puis-je faire pour vous?</h1>
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row services-content">
+
+			<div id="owl-slider" class="owl-carousel services-list">
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-earth"></i></span>
+
+					<div class="service-content">
+
+						<h3>INTÉGRATION</h3>
+
+						<p class="desc">Création du template (React js, wordpress, html) <br/>
+							<i>Découpage sur HTML/Css suivant la maquette au millimètre près</i>
+						</p>
+
+					</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="fa fa-wordpress"></i></span>
+
+					<div class="service-content">
+
+						<h3>DYNAMISATION WORDPRESS</h3>
+
+						<p class="desc">Dynamisation de tout les contenus de wordpress <br/>
+							<i>Titre, menu, logo, image, article, bloc de section, personnalisation du backoffice ...</i>
+						</p>
+
+					</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="fa fa-shopping-cart"></i></span>
+
+					<div class="service-content">
+
+						<h3>E-COMMERCE</h3>
+
+						<p class="desc">Mise en place de woocommerce sur wordpress<br/>
+							<i>Produit simple & variant, gestion des stoques, système de paiement, envoie mail</i>
+						</p>
+
+					</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-toggles"></i></span>
+
+					<div class="service-content">
+
+						<h3>DÉVELOPPEMENT REACT JS</h3>
+
+						<p class="desc">Intégration et dynamisation des divers fonctionnalitée<br/>
+							<i>Session, Routes, filtre, pagination, upload/download...</i>
+						</p>
+
+					</div>
+
+				</div> <!-- /service -->
+
+			</div> <!-- /services-list -->
+
+		</div> <!-- /services-content -->
+
+	</section> <!-- /services -->
+
+
+	<!-- contact
+   ================================================== -->
+	<section id="contact" style="padding-top: 1rem;">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Contact</h5>
+				<h1>J'aimerais avoir de vos nouvelles.</h1>
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row contact-info">
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-pin"></i>
+				</div>
+
+				<h5>Où me trouver</h5>
+
+				<p>Ankadifotsy, Antananarivo 101 - Madagascar</p>
+
+			</div>
+
+			<div class="col-four tab-full collapse">
+
+				<div class="icon">
+					<i class="icon-mail"></i>
+				</div>
+
+				<h5>Email</h5>
+
+				<p>andriamiarintsoaniraina@gmail.com
+				</p>
+
+			</div>
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-phone"></i>
+				</div>
+
+				<h5>Téléphone</h5>
+
+				<p>+261 34 44 085 07
+				</p>
+
+			</div>
+
+		</div> <!-- /contact-info -->
+
+	</section> <!-- /contact -->
+
+
+	<!-- footer
+   ================================================== -->
+
+	<footer>
+		<div class="row">
+
+			<div class="col-six tab-full pull-right social">
+
+				<ul class="footer-social">
+					<li><a href="https://www.facebook.com/ntsoa.nyraina/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://github.com/niraina" target="_blank"><i class="fa fa-github"></i></a></li>
+					<li><a href="https://mg.linkedin.com/in/niraina-andriamiarintsoa-34a267213" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="mailto: andriamiarintsoaniraina@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-eight tab-full">
+				<div class="copyright">
+					<span></span>
+				</div>
+			</div>
+
+			<div id="go-top">
+				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+			</div>
+
+		</div> <!-- /row -->
+	</footer>
+
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
+
+	<!-- Java Script
+   ================================================== -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 
 </html>
